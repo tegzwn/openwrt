@@ -17,6 +17,9 @@ an7581_setup_interfaces()
 	gemtek,w1700k)
 		ucidef_set_interfaces_lan_wan "lan2 lan3 lan4" "wan"
 		;;
+	bell,*040g*)
+		ucidef_set_interfaces_lan_wan "lan2 lan3 lan4" "eth1"
+		;;
 	*)
 		echo "Unsupported hardware. Network interfaces not initialized"
 		;;
